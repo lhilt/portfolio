@@ -40,7 +40,7 @@ body {
     color: $coral;
     transition: color 0.3s ease-out;
   }
-  .active {
+  &:active {
     color: $coral;
     border-bottom: 1px solid $coral;
   }
@@ -92,6 +92,7 @@ body {
 }
 
 #projects {
+  padding-top: 96px;
   min-height: 50vh;
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +100,7 @@ body {
 }
 
 .project {
+  position: relative;
   background: #ecedef;
   flex: 1;
   margin: 20px;
@@ -110,6 +112,15 @@ body {
   h2 {
     text-transform: uppercase;
     color: $text-black;
+  }
+}
+
+.project-tools {
+  position: absolute;
+  bottom: 10px;
+  span {
+    text-decoration: underline;
+    padding-right: 10px;
   }
 }
 
