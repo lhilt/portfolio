@@ -53,9 +53,11 @@ body {
   background: url(https://images.unsplash.com/photo-1513077202514-c511b41bd4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   // background: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   background-size: cover;
+  background-attachment: fixed;
   margin-top: 96px;
   display: flex;
   align-items: center;
+  z-index: -1;
 }
 
 .headshot-round {
@@ -77,6 +79,7 @@ body {
   display: flex;
   align-items: center;
   background: $teal;
+  z-index: 1;
 }
 
 .about-content {
@@ -146,6 +149,10 @@ footer {
   width: 90px;
   text-decoration: underline;
   color: $teal;
+}
+
+#email:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 750px) {
