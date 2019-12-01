@@ -1,0 +1,165 @@
+// $bg-gray: #ebe8e1;
+$bg-gray: #d4d5da;
+$darker-gray: #dad6d1;
+$text-black: #2e2e2d;
+$teal: #30b7a9;
+$coral: #f3835c;
+$rust: #aa5b01;
+$gold: #d49a00;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-gray;
+  font-family: "Raleway", sans-serif;
+  color: $text-black;
+}
+
+.nav-bar {
+  padding: 38px 5vw;
+  background-color: $bg-gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-link {
+  color: $text-black;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  margin-right: 0.8em;
+  transition: color 0.3s ease-out;
+  &:hover {
+    color: $coral;
+    transition: color 0.3s ease-out;
+  }
+  .active {
+    color: $coral;
+    border-bottom: 1px solid $coral;
+  }
+}
+
+.hero {
+  height: calc(100vh - 96px);
+  background: $darker-gray;
+  background: url(https://images.unsplash.com/photo-1513077202514-c511b41bd4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  // background: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-size: cover;
+  margin-top: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.headshot-round {
+  max-width: 250px;
+  margin-right: 25px;
+}
+
+.name-logo {
+  color: $text-black;
+  font-family: "Londrina Sketch", cursive;
+  font-size: 85px;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: $teal;
+}
+
+.about-content {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vh;
+  margin: 0 auto;
+  width: 900px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+#projects {
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  background: #ecedef;
+  flex: 1;
+  margin: 20px;
+  padding: 20px 10px;
+  border: 1px solid $darker-gray;
+  height: 300px;
+  min-width: 350px;
+  box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
+  h2 {
+    text-transform: uppercase;
+    color: $text-black;
+  }
+}
+
+footer {
+  background: $bg-gray;
+  height: calc(50vh - 96px);
+}
+
+.contact-header {
+  font-size: 30px;
+  color: $coral;
+  padding: 20px;
+}
+
+.social {
+  padding: 10px 40px;
+  font-size: 1.2em;
+}
+
+.social-type {
+  display: inline-block;
+  width: 90px;
+  text-decoration: underline;
+  color: $teal;
+}
+
+@media (min-width: 750px) {
+  .hero {
+    position: relative;
+  }
+
+  .name-logo {
+    position: absolute;
+    top: 20vh;
+    left: 80vh;
+    font-size: 85px;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+
+  .project {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .name-logo {
+    font-size: 70px;
+    text-align: center;
+  }
+}
