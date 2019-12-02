@@ -85,6 +85,38 @@ body {
   line-height: 1.3em;
 }
 
+#skills {
+  padding-top: 96px;
+  min-height: 50vh;
+}
+
+.skills {
+  padding: 30px;
+  border: 3px solid #f3835c;
+  min-height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill-lists {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-list {
+  max-width: 50%;
+}
+.skill-list h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 25px;
+}
+.skill-list ul {
+  padding: 10px 25px;
+  font-size: 1.1em;
+}
+
 #projects {
   padding-top: 96px;
   min-height: 50vh;
@@ -110,6 +142,16 @@ body {
   margin-bottom: 15px;
 }
 
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link-group a {
+  font-size: 0.9em;
+  color: #30b7a9;
+}
+
 .project-img-container {
   height: 180px;
   overflow: scroll;
@@ -133,6 +175,7 @@ body {
 footer {
   background: #d4d5da;
   height: calc(50vh - 96px);
+  padding: 40px;
 }
 
 .contact-header {
@@ -178,17 +221,46 @@ footer {
   }
 }
 @media (max-width: 400px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
   .name-logo {
     font-size: 70px;
     text-align: center;
+  }
+
+  .skill-lists {
+    flex-direction: column;
+  }
+
+  .skill-list {
+    max-width: 100%;
   }
 
   .project {
     min-width: 340px;
   }
 
+  .project-about p {
+    font-size: 0.9rem;
+  }
+
   .project-img-container {
     height: 120px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .social {
+    font-size: 0.9em;
+    padding: 7px 25px;
+  }
+
+  .social-type {
+    width: 70px;
   }
 }
 
