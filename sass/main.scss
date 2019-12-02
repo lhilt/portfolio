@@ -110,13 +110,25 @@ body {
   margin: 20px;
   padding: 20px 10px;
   border: 1px solid $darker-gray;
-  height: 300px;
-  min-width: 350px;
+  height: 320px;
+  min-width: 450px;
   box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
   h2 {
     text-transform: uppercase;
     color: $text-black;
+    margin-bottom: 15px;
   }
+}
+
+.project-img-container {
+  height: 180px;
+  overflow: scroll;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.project-preview-img {
+  max-width: 100%;
 }
 
 .project-tools {
@@ -172,7 +184,11 @@ footer {
   }
 
   .project {
-    margin: 40px;
+    // margin: 40px;
+  }
+
+  .project-img-container {
+    height: 150px;
   }
 }
 
@@ -180,5 +196,13 @@ footer {
   .name-logo {
     font-size: 70px;
     text-align: center;
+  }
+
+  .project {
+    min-width: 340px;
+  }
+
+  .project-img-container {
+    height: 120px;
   }
 }

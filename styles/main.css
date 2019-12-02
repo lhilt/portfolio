@@ -100,13 +100,25 @@ body {
   margin: 20px;
   padding: 20px 10px;
   border: 1px solid #dad6d1;
-  height: 300px;
-  min-width: 350px;
+  height: 320px;
+  min-width: 450px;
   box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
 }
 .project h2 {
   text-transform: uppercase;
   color: #2e2e2d;
+  margin-bottom: 15px;
+}
+
+.project-img-container {
+  height: 180px;
+  overflow: scroll;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.project-preview-img {
+  max-width: 100%;
 }
 
 .project-tools {
@@ -161,14 +173,22 @@ footer {
     flex-direction: row;
   }
 
-  .project {
-    margin: 40px;
+  .project-img-container {
+    height: 150px;
   }
 }
 @media (max-width: 400px) {
   .name-logo {
     font-size: 70px;
     text-align: center;
+  }
+
+  .project {
+    min-width: 340px;
+  }
+
+  .project-img-container {
+    height: 120px;
   }
 }
 
