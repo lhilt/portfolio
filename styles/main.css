@@ -28,7 +28,6 @@ body {
   margin-right: 0.8em;
   transition: color 0.3s ease-out;
 }
-
 .nav-link:hover {
   color: #f3835c;
   transition: color 0.3s ease-out;
@@ -108,13 +107,11 @@ body {
 .skill-list {
   max-width: 50%;
 }
-
 .skill-list h3 {
   font-size: 1em;
   text-transform: uppercase;
   height: 25px;
 }
-
 .skill-list ul {
   padding: 10px 25px;
   font-size: 1.1em;
@@ -137,9 +134,9 @@ body {
   border: 1px solid #dad6d1;
   height: 320px;
   min-width: 450px;
+  max-width: 680px;
   box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
 }
-
 .project h2 {
   text-transform: uppercase;
   color: #2e2e2d;
@@ -171,7 +168,6 @@ body {
   position: absolute;
   bottom: 10px;
 }
-
 .project-tools span {
   text-decoration: underline;
   padding-right: 10px;
@@ -210,11 +206,18 @@ footer {
     position: relative;
   }
 
-  .name-logo, .name-title {
+  .name {
     position: absolute;
     top: 20vh;
     left: 80vh;
+  }
+
+  .name-logo {
     font-size: 85px;
+  }
+
+  .name-title {
+    font-size: 35px;
   }
 
   .about-content {
@@ -268,6 +271,5 @@ footer {
     width: 70px;
   }
 }
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
