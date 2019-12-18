@@ -144,6 +144,7 @@ body {
   border: 1px solid $darker-gray;
   height: 320px;
   min-width: 450px;
+  max-width: 680px;
   box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
   h2 {
     text-transform: uppercase;
@@ -215,11 +216,18 @@ footer {
     position: relative;
   }
 
-  .name-logo {
+  .name {
     position: absolute;
     top: 20vh;
     left: 80vh;
+  }
+
+  .name-logo {
     font-size: 85px;
+  }
+
+  .name-title {
+    font-size: 35px;
   }
 
   .about-content {

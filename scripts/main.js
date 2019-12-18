@@ -7,18 +7,18 @@ const projects = $('#projects').offset().top - nav;
 
 // source: https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom#3898152
 highlightOnScroll = () => {
-  const $pos = $(window).scrollTop();
+  const position = $(window).scrollTop();
 
-  if ($pos >= home && $pos < about) {
+  if (position >= home && position < about) {
     highlightActive('.nav-link[href="#home"]');
-  } else if ($pos >= about && $pos < skills) {
+  } else if (position >= about && position < skills) {
     highlightActive('.nav-link[href="#about"]');
-  } else if ($pos >= skills && $pos < projects) {
+  } else if (position >= skills && position < projects) {
     highlightActive('.nav-link[href="#skills"]');
-  } else if ($pos >= projects) {
+  } else if (position >= projects) {
     const bottom = $(document).height();
     // if close to bottom of page, switch highlight to contact
-    if ($pos + $(window).height() >= bottom - 100) {
+    if (position + $(window).height() >= bottom - 100) {
       highlightActive('.nav-link[href="#contact"]');
     } else {
       highlightActive('.nav-link[href="#projects"]');
