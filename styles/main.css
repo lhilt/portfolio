@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d4d5da;
+  font-family: "Raleway", sans-serif;
+  color: #2e2e2d;
+}
+
+.nav-bar {
+  padding: 38px 5vw;
+  background-color: #d4d5da;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-link {
+  color: #2e2e2d;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  margin-right: 0.8em;
+  transition: color 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: #f3835c;
+  transition: color 0.3s ease-out;
+}
+
+.active {
+  color: #f3835c;
+  border-bottom: 1px solid #f3835c;
+}
+
+.hero {
+  height: calc(100vh - 96px);
+  background: #dad6d1;
+  background: url(https://images.unsplash.com/photo-1513077202514-c511b41bd4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 96px;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+}
+
+.headshot-round {
+  max-width: 250px;
+  margin-right: 25px;
+}
+
+.name-logo {
+  color: #2e2e2d;
+  font-family: "Londrina Sketch", cursive;
+  font-size: 85px;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #30b7a9;
+  z-index: 1;
+}
+
+.about-content {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vh;
+  margin: 0 auto;
+  width: 900px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+#skills {
+  padding-top: 96px;
+  min-height: 50vh;
+}
+
+.skills {
+  padding: 30px;
+  border: 3px solid #f3835c;
+  min-height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill-lists {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-list {
+  max-width: 50%;
+}
+
+.skill-list h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 25px;
+}
+
+.skill-list ul {
+  padding: 10px 25px;
+  font-size: 1.1em;
+}
+
+#projects {
+  padding-top: 96px;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  position: relative;
+  background: #ecedef;
+  flex: 1;
+  margin: 20px;
+  padding: 20px 10px;
+  border: 1px solid #dad6d1;
+  height: 320px;
+  min-width: 450px;
+  box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+}
+
+.project h2 {
+  text-transform: uppercase;
+  color: #2e2e2d;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link-group a {
+  font-size: 0.9em;
+  color: #30b7a9;
+}
+
+.project-img-container {
+  height: 180px;
+  overflow: scroll;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.project-preview-img {
+  max-width: 100%;
+}
+
+.project-tools {
+  position: absolute;
+  bottom: 10px;
+}
+
+.project-tools span {
+  text-decoration: underline;
+  padding-right: 10px;
+}
+
+footer {
+  background: #d4d5da;
+  height: calc(50vh - 96px);
+  padding: 40px;
+}
+
+.contact-header {
+  font-size: 30px;
+  color: #f3835c;
+  padding: 20px;
+}
+
+.social {
+  padding: 10px 40px;
+  font-size: 1.2em;
+}
+
+.social-type {
+  display: inline-block;
+  width: 90px;
+  text-decoration: underline;
+  color: #30b7a9;
+}
+
+#email:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .hero {
+    position: relative;
+  }
+
+  .name-logo, .name-title {
+    position: absolute;
+    top: 20vh;
+    left: 80vh;
+    font-size: 85px;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+
+  .project-img-container {
+    height: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .name-logo {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .skill-lists {
+    flex-direction: column;
+  }
+
+  .skill-list {
+    max-width: 100%;
+  }
+
+  .project {
+    min-width: 340px;
+  }
+
+  .project-about p {
+    font-size: 0.9rem;
+  }
+
+  .project-img-container {
+    height: 120px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .social {
+    font-size: 0.9em;
+    padding: 7px 25px;
+  }
+
+  .social-type {
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
