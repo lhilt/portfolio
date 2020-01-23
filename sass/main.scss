@@ -26,7 +26,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav-link {
@@ -48,15 +48,14 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 96px);
-  background: $darker-gray;
-  background: url(https://images.unsplash.com/photo-1513077202514-c511b41bd4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-  // background: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  height: calc(30vh - 96px);
+  background: $bg-gray;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 96px;
   display: flex;
   align-items: center;
+  text-align: right;
   z-index: -1;
 }
 
@@ -65,20 +64,30 @@ body {
   margin-right: 25px;
 }
 
+.name {
+  margin-left: auto;
+  padding-right: 5vw;
+  // z-index: 100;
+}
+
 .name-logo {
-  color: $text-black;
+  color: darken($gold, 0%);
   font-family: "Londrina Sketch", cursive;
-  font-size: 85px;
+  font-size: 75px;
   letter-spacing: 0.1em;
-  margin: 0 auto;
   transition: all 0.3s ease-in-out;
 }
 
+.name-title {
+  padding-right: 20px;
+}
+
 .about {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   background: $teal;
+  // background: $bg-gray;
   z-index: 1;
 }
 
@@ -88,8 +97,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0 5vh;
+  padding: 45px 5vw;
   margin: 0 auto;
+  border: 40px solid $teal;
+  background: $bg-gray;
+  // background: $teal;
   width: 900px;
   font-size: 1.5em;
   line-height: 1.3em;
@@ -212,20 +224,6 @@ footer {
 }
 
 @media (min-width: 750px) {
-  .hero {
-    position: relative;
-  }
-
-  .name {
-    position: absolute;
-    top: 20vh;
-    left: 80vh;
-  }
-
-  .name-logo {
-    font-size: 85px;
-  }
-
   .name-title {
     font-size: 35px;
   }
@@ -244,10 +242,10 @@ footer {
     font-size: 14px;
   }
 
-  .name-logo {
-    font-size: 70px;
-    text-align: center;
-  }
+  // .name-logo {
+  //   font-size: 70px;
+  //   text-align: center;
+  // }
 
   .skill-lists {
     flex-direction: column;
