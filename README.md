@@ -16,5 +16,5 @@ entire page, then dove in on styling the project cards. Last was the JavaScript 
 
 ## Biggest Wins and Challenges
 
-The biggest win and challenge, simulataneously, was highlighting navbar items on scroll. After some extensive Stack
+The biggest win and challenge, simultaneously, was highlighting navbar items on scroll. After some extensive Stack
 Overflow searching, I pieced together a few examples to make it work the way I wanted.
